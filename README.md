@@ -1,4 +1,4 @@
-# insight
+# Insight
 
 
 There are still blind spots in how we understnad ourselves that we can't be sure of, even with deeper introspection. It’s like the saying goes, “nothing from the mind can save you from the mind”. We need others too to understand better ourselves. This idea has also been suggested by the psychologist [Tasha Eurich](https://tashaeurich.com/) in her book ‘Insight’, hence the name of the project.

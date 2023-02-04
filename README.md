@@ -18,6 +18,8 @@ Front end | Get input text, display output
 Understanding engine | Process the user input to classify personality
 Context | Generate random or saved context about the state of the person
 Generate history | Generate story based on context and personality
+<br>
+
 ![outline](https://github.com/mube1/insight/blob/main/cohere.png)
 
 ### Dataset ###

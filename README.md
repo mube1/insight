@@ -18,6 +18,10 @@ Front end | Get input text, display output
 Understanding engine | Process the user input to classify personality
 Context | Generate random or saved context about the state of the person
 Generate history | Generate story based on context and personality
+![outline](https://github.com/mube1/insight/blob/main/cohere.png)
 
 ### Dataset ###
 Data scrapped from [enneagram institute](https://www.enneagraminstitute.com/type-5) is used to train the model to classify people into their personalities.
+
+### Demo ###
+![Demo](https://github.com/mube1/insight/blob/main/cohere.gif)

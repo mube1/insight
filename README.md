@@ -20,7 +20,7 @@ Context | Generate random or saved context about the state of the person
 Generate history | Generate story based on context and personality
 <br>
 
-![outline](https://github.com/mube1/insight/blob/main/cohere.png)
+![outline](https://github.com/mube1/insight/blob/main/cohere.png |width=100)
 
 ### Dataset ###
 Data scrapped from [enneagram institute](https://www.enneagraminstitute.com/type-5) is used to train the model to classify people into their personalities.

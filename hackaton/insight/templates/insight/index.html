@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight</title>
+
+    <style>
+        .float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+    </style>
+</head>
+<body>
+    <div onclick="location.href='#';" style="cursor: pointer;">
+        <h1 style="color: blue;">Insight </h1>
+    </div>
+    <br>
+
+   
+    <div class="float-container"
+    style="
+    width: 95%;
+    background-color: rgb(206, 226, 250); 
+    margin: 50px 50px 50 50px;
+    padding: 50px 50px 50 50px;
+    height: 400px;
+    float: left;
+    display: inline;
+    /* align-items: center; */
+    ">
+        
+            <div style="float: left;width: 30%;">
+                <form action="{% url 'insight:index' %}" method="post"
+                    style="align-self: center;
+                    align-items: center;    "     >
+                    {% csrf_token %} 
+                    <label style="color: red; font-size: 1000;" for="about"> <h2 > Enter stuff about yourself</h2> </label><br>
+                    <textarea type="text" 
+                    style="
+                    font-size: 20px;
+                    width: 500px;
+                    width: 100%;
+                     
+                    min-height: 250px;
+                    border-radius: 1vh;
+
+                    border-color:white ; " 
+                    placeholder="Enter text here " name="about"></textarea>
+                    {{form}}
+                  
+                    <!-- <h1>form</h1> -->
+                    <br><br>
+                    <input type="submit" style="height: 50px; width: 150px; font-weight: 800; color: rgb(4, 4, 83);" value="Submit">
+                </form> 
+
+            </div>
+
+            <div style="
+                    width: 550px; 
+                    width: 50%; 
+                    /* height: 240px; */
+                    min-height: 240px;
+                    font-size: 20px;
+                    color: rgb(24, 4, 207);
+                    float: right;
+                    margin: 80px 50px 50px 50px;
+                    padding: 10px 10px 10px 10px;
+                    /* border: solid 2px blue; */
+                    border-radius: 1vh;
+                    background-color: white;
+
+                    ">
+
+                    {% if posted %}
+                        <p>{{story}}</p>
+                    {% else %}
+                        <p >Enter stuff about yourself: personality, career, hobby, fear, etc</p>
+                    {% endif %}
+
+                
+                    
+                    
+             </div>
+      
+        
+    </div>
+
+
+
+</body>
+</html>

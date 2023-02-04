@@ -1,6 +1,6 @@
 
 import cohere
-co = cohere.Client('wOVH9HEkHWFOhccYXr84n9jcaF49mnoynoPPSvEU') # This is your trial API key
+co = cohere.Client('') # This is your trial API key
 
 class Story:
     
